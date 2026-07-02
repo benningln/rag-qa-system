@@ -26,22 +26,39 @@
 # 项目结构
 
 rag-qa-system/
+
 ├── backend/ # 后端代码
+
 │ ├── main.py # FastAPI 主服务
+
 │ ├── parser.py # PDF 解析器
+
 │ ├── chunker.py # 文本分块器
+
 │ ├── vector_store.py # 向量检索模块
+
 │ ├── reranker.py # 精排重排模块
+
 │ ├── memory.py # Redis 会话记忆
+
 │ ├── generator.py # RAG 生成器
+
 │ └── config.py # 配置管理
+
 ├── frontend/ # 前端代码（Next.js）
+
 │ ├── src/app/ # 页面组件
+
 │ └── src/lib/ # API 客户端
+
 ├── data/ # 向量数据库（本地）
+
 ├── local_models/ # 本地模型文件（需自行下载）
+
 ├── requirements.txt # Python 依赖
+
 └── .env.example # 环境变量模板
+
 
 # 后端配置
 创建虚拟环境
