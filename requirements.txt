@@ -1,0 +1,14 @@
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+python-multipart==0.0.20
+pymupdf==1.24.14
+pandas==2.2.3
+chromadb==0.5.23
+sentence-transformers==3.0.1
+FlagEmbedding==1.2.11
+redis==5.2.1
+openai==1.59.3
+python-dotenv==1.0.1
+sse-starlette==2.2.1
+paddlepaddle==2.6.2
+paddleocr==2.9.1
