@@ -44,24 +44,24 @@ rag-qa-system/
 └── .env.example # 环境变量模板
 
 # 后端配置
-# 创建虚拟环境
+创建虚拟环境
 python -m venv .venv
 source .venv/bin/activate  # Windows: .venv\Scripts\activate
-# 安装依赖
+安装依赖
 pip install -r requirements.txt
-# 配置环境变量
+配置环境变量
 cp .env.example .env
-# 编辑 .env，填入你的 DeepSeek API Key
+编辑 .env，填入你的 DeepSeek API Key
 
 # 下载模型
-# 使用 modelscope 下载（推荐）
+使用 modelscope 下载（推荐）
 python -c "from modelscope import snapshot_download; snapshot_download('BAAI/bge-large-zh-v1.5', cache_dir='./local_models', local_dir='./local_models/bge-large-zh-v1.5')"
 python -c "from modelscope import snapshot_download; snapshot_download('BAAI/bge-reranker-large', cache_dir='./local_models', local_dir='./local_models/bge-reranker-large')"
 
 # 启动 Redis
-# Docker 方式（推荐）
+Docker 方式（推荐）
 docker run -d --name redis-rag -p 6379:6379 redis:alpine
-# 或 Windows 直接运行 （没有Docker）
+或 Windows 直接运行 （没有Docker）
 redis-server.exe
 
 # 启动后端
